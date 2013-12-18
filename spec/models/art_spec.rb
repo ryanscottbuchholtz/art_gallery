@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Art do
-  describe validations do
+  describe 'validations' do
     let(:blank) { [nil, '']}
     let(:sale) { [true, false]}
 

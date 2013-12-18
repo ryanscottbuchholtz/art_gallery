@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Collection do
- describe validations do
+ describe 'validations' do
     let(:blank) { [nil, ''] }
 
     it { should have_valid(:name).when('Post-Modern') }
