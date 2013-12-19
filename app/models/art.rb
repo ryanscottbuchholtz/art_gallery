@@ -7,10 +7,16 @@ class Art < ActiveRecord::Base
   validates_presence_of :art_type_id
 
   belongs_to :artist,
-    inverse_of: :arts
+    inverse_of: :arts,
+    dependent: :destroy
   belongs_to :art_type,
-    inverse_of: :arts
+    inverse_of: :arts,
+    dependent: :destroy
   belongs_to :collection,
-    inverse_of: :arts
+    inverse_of: :arts,
+    dependent: :destroy
+  belongs_to :customer,
+    inverse_of: :arts,
+    dependent: :destroy
 
 end

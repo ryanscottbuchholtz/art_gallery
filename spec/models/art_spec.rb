@@ -24,9 +24,9 @@ describe Art do
 
   describe 'associations' do
 
-    it { should belong_to(:artist) }
-    it { should belong_to(:art_type) }
-    it { should belong_to(:collection) }
+    it { should belong_to(:artist).dependent(:destroy) }
+    it { should belong_to(:art_type).dependent(:destroy) }
+    it { should belong_to(:collection).dependent(:destroy) }
 
 end
     # it 'returns an artist name for a particular piece of art'
