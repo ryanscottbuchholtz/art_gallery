@@ -12,4 +12,8 @@ class Customer < ActiveRecord::Base
     through: :customer_collections,
     inverse_of: :customer
 
+    def total_spent
+      1000
+    end
+
 end
