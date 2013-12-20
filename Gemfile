@@ -39,6 +39,9 @@ group :development, :test do
   gem 'valid_attribute'
 end
 
+gem 'rails-erd'
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
